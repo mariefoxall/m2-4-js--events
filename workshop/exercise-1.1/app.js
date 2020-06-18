@@ -27,4 +27,4 @@ setTimeout(function () {
     body.removeEventListener("click", winner);
     console.log("loser");
   }
-}, 5000);
+}, 1000);
