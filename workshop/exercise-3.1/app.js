@@ -25,13 +25,13 @@ let currentHour = currentTime.getHours();
 let currentMin = currentTime.getMinutes();
 let currentSec = currentTime.getSeconds();
 
-secDisplay.innerText = `${currentSec}`;
-minDisplay.innerText = `${currentMin}`;
-hourDisplay.innerText = `${currentHour}`;
-
 let leadingZeros = function (digit) {
   return (digit < 10 ? "0" : "") + digit;
 };
+
+secDisplay.innerText = `${leadingZeros(currentSec)}`;
+minDisplay.innerText = `${leadingZeros(currentMin)}`;
+hourDisplay.innerText = `${leadingZeros(currentHour)}`;
 
 setInterval(() => {
   currentSec = (currentSec + 1) % 60;
