@@ -1,0 +1,103 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: "Poppins";
+}
+
+header {
+  background-color: darkseagreen;
+  height: 80px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.start {
+  border: 1px solid white;
+  border-radius: 5px;
+  background-color: salmon;
+  height: 40px;
+  width: 60px;
+  text-align: center;
+  color: white;
+  transition: ease-in-out 0.2s;
+  font-family: "Poppins";
+}
+
+.start:focus {
+  border: 2px solid lemonchiffon;
+  transform: scale(1.2);
+  outline: none;
+}
+
+.countdown {
+  display: none;
+  font-size: 30px;
+  color: white;
+}
+
+.disappear {
+  display: none;
+}
+
+.appear {
+  /* display: inline-block; */
+  display: flex !important;
+}
+
+.gameboard {
+  background-color: indianred;
+  height: 60%;
+  width: 70%;
+  position: relative;
+  left: 15%;
+  margin-top: 20px;
+  border: 2px solid goldenrod;
+}
+
+.status {
+  position: absolute;
+  z-index: 10;
+  height: 20%;
+  width: 30%;
+  left: 35%;
+  top: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: lightblue;
+  display: none;
+  font-size: 20px;
+  color: white;
+  border: 3px solid lemonchiffon;
+  border-radius: 50%;
+}
+
+.gamebutton {
+  height: 30px;
+  width: 30px;
+  font-size: 18px;
+  color: white;
+  background-color: pink;
+  position: absolute;
+  z-index: 10;
+  border: 1px solid white;
+  border-radius: 50%;
+  font-family: "Poppins";
+}
+
+.gamebutton:focus {
+  border: 2px solid lemonchiffon;
+  outline: none;
+}
+
+.green {
+  background-color: darkgreen;
+}
